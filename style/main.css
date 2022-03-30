@@ -1,7 +1,8 @@
 :root{
-    --principal:#000000;
-    --secundaria:#ffffff;
-    --terciaria:#ff8830;
+    --principal:#021313;
+    --secundaria:#6e9987;
+    --terciaria:#e0e4ce;
+    --branco:#ffff;
 }
 *{
     margin: 0;
@@ -14,59 +15,48 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-header .container{
+main{
     background-color: var(--principal);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-header .container .logo{
-    margin: 15px;
-    font-size: 30px;
-    color: var(--secundaria);
-}
-
-header .container nav a{
-    text-decoration: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 16px;
-    color: var(--secundaria);
-    padding-right: 15px;
-    transition: .3s;
-}
-header .container nav a:hover{
-    color: var(--terciaria);
 }
 /*Coisas relacionadas a capa principal*/
 
 .capa-principal{
-    background: linear-gradient(180deg, rgba(0,0,0,100%), rgba(0,0,0,20%)) ,url(/img/capa1.png);
+    background: linear-gradient(0deg, var(--principal), rgba(0,0,0,20%)) ,url(/img/capabat.jpg);
     height: 600px;
+    width: 100%;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 80px;
-    padding-top: 40px;
+    padding-left: 5em;
+    padding-top: 4em;
     
 }
+.logo{
+    font-size: 5em;
+    color: var(--branco);
+    padding-bottom: 0.3em;
+}
+.capa-principal{
+    padding-top: 12%;
+}
+
 .titulo{
-    font-size: 45px;
+    font-size: 2.5em;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--secundaria);
+    color: var(--branco);
 }
 .descricao{
-    font-size: 15px;
+    font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--secundaria);
+    color: var(--branco);
     margin-bottom: 10px;
+    
 }
 
 .botao{
     background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75));
-    border-color: #ff8830;
+    border-color: var(--terciaria);
     border-style: solid;
     border-width: 3px;
     color: white;
@@ -77,12 +67,37 @@ header .container nav a:hover{
     font-size: 15px;
     transition: .3s ease-in-out;
     margin-right: 7px;
+    cursor: pointer;
+    
 }
 .botao:hover{
-    background: #ff8830;
-    color: #000000;
+    background: var(--terciaria);
+    color: var(--principal);
     border: none;
 }
 .botao i{
     margin-right: 7px;
+}
+
+.carrocel{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.titulo-carrocel{
+    color: var(--branco);
+    padding-top: 30px;
+    padding-left: 80px;
+}
+
+footer{
+    background-color: var(--terciaria);
+    height: 150px;
+    margin-top: 80px;
+
+}
+.informacoes{
+    text-align: center;
+    padding-top: 75px;
+    color: var(--principal);
 }
